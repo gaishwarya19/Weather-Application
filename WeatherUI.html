@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Weather Forecast</title>  
+    
+    <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    
+    <style>
+input[type=text], select {
+    
+    width: 50%;
+    padding: 12px 20px;
+    margin: 0px 5px 0px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Slackey', cursive; 
+            font-size: 60px;
+            color: white;
+            /** font-family: 'Shojumaru', cursive; */
+        }
+        
+        body{
+            
+            background-image: url("sky6.jpg");
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
+    </style>
+        
+</head>
+
+
+<body>
+    
+    
+    <h1>Weather Forecast</h1>
+    <img src="cloud.png"  class ="center">
+    <div>
+    <form>
+    
+        <label for="city" style="font-size: 25px; font-family: 'Chelsea Market', cursive; color:white">Enter Your City:</label>
+        <input type="text" style="font-size: 20px;">
+        
+        <input type="submit" value="Search" style="font-size: 20px;">
+    
+    </form>
+    </div>
+    
+</body>
+
+
+
+</html>
