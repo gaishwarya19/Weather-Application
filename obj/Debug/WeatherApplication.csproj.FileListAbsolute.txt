@@ -3,3 +3,10 @@ C:\Users\polavapr\Documents\Visual Studio 2012\Projects\IS7024\WeatherApplicatio
 C:\Users\polavapr\Documents\Visual Studio 2012\Projects\IS7024\WeatherApplication\obj\Debug\WeatherApplication.csprojResolveAssemblyReference.cache
 C:\Users\polavapr\Documents\Visual Studio 2012\Projects\IS7024\WeatherApplication\obj\Debug\WeatherApplication.dll
 C:\Users\polavapr\Documents\Visual Studio 2012\Projects\IS7024\WeatherApplication\obj\Debug\WeatherApplication.pdb
+D:\flex1\github\WeatherApplication\bin\WeatherApplication.dll.config
+D:\flex1\github\WeatherApplication\bin\WeatherApplication.dll
+D:\flex1\github\WeatherApplication\bin\WeatherApplication.pdb
+D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.csprojAssemblyReference.cache
+D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.csproj.CoreCompileInputs.cache
+D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.dll
+D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.pdb

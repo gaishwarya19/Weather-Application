@@ -1,4 +1,10 @@
 body {
+    background-image: url("/assets/images/home/sky6.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -8,4 +14,47 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+}
+input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 0px 5px 0px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+.formstyle {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Slackey', cursive;
+    font-size: 60px;
+    color: white;
+    /** font-family: 'Shojumaru', cursive; */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
