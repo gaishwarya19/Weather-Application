@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
 </head>
-<body>
+<body runat="server" id="BodyTag">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -45,10 +45,10 @@
             <h1>Weather Forecast</h1>
             <img src="/assets/images/home/cloud.png" class="center">
             <div class="formstyle">
-                <form>
+                <form runat="server">
                     <label for="city" style="font-size: 25px; font-family: 'Chelsea Market', cursive; color: white">Enter Your City:</label>
-                    <input type="text" style="font-size: 20px;">
-                    <input type="submit" value="Search" style="font-size: 20px;">
+                    <asp:TextBox ID="TextBox1" runat="server" style="font-size: 20px;"></asp:TextBox>
+                    <asp:Button ID="Button1" runat="server" Text="Search" OnClick="Button1_Click" />
                 </form>
             </div>
         </div>

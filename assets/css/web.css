@@ -1,4 +1,4 @@
-body {
+.home {
     background-image: url("/assets/images/home/sky6.jpg");
     height: 500px;
     background-position: center;
@@ -57,4 +57,32 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.temp {
+    width: 93.75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+#tabledesign {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+    margin: 0 auto;
+    color: white;
+}
+
+    #tabledesign td, #tabledesign th {
+        padding-right: 70px;
+        padding-bottom: 20px;
+    }
+
+.snow {
+    background-image: url("/assets/images/home/snowyy.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }

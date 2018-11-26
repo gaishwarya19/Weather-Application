@@ -10,3 +10,10 @@ D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.csprojAssemblyRe
 D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.csproj.CoreCompileInputs.cache
 D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.dll
 D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.pdb
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\bin\WeatherApplication.dll.config
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\bin\WeatherApplication.dll
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\bin\WeatherApplication.pdb
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.csprojAssemblyReference.cache
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.csproj.CoreCompileInputs.cache
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.dll
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.pdb
