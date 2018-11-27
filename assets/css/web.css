@@ -86,3 +86,21 @@ h1 {
     background-size: cover;
     position: relative;
 }
+
+.sunny {
+    background-image: url("/assets/images/home/sunny.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.rainy {
+    background-image: url("/assets/images/home/drizzle.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

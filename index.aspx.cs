@@ -16,9 +16,9 @@ namespace WeatherApplication
         {
             BodyTag.Attributes.Add("class", "home");
         }
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void btnSearch_click(object sender, EventArgs e)
         {
-            var city = TextBox1.Text.ToString();
+            var city = txtCity.Text.ToString();
             var url = string.Format("{0}?city={1}", @"Weather.aspx", city).ToString();
             Response.Redirect(url);
         }

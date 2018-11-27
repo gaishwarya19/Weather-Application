@@ -47,8 +47,8 @@
             <div class="formstyle">
                 <form runat="server">
                     <label for="city" style="font-size: 25px; font-family: 'Chelsea Market', cursive; color: white">Enter Your City:</label>
-                    <asp:TextBox ID="TextBox1" runat="server" style="font-size: 20px;"></asp:TextBox>
-                    <asp:Button ID="Button1" runat="server" Text="Search" OnClick="Button1_Click" />
+                    <asp:TextBox ID="txtCity" runat="server" style="font-size: 20px;"></asp:TextBox>
+                    <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_click" />
                 </form>
             </div>
         </div>

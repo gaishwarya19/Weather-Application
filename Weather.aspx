@@ -21,15 +21,15 @@
     <br><br>
   <tr>
     <td>Current Temperature</td>
-    <td style="text-align: center"><%=temp_string%></td> 
+    <td style="text-align: center"><%=temparatureValue%></td> 
   </tr>
   <tr>
     <td>Min. Temperature</td>
-    <td style="text-align: center"><%=mintemp%></td>
+    <td style="text-align: center"><%=minTemp%></td>
   </tr>
   <tr>
     <td>Max. Temperature</td>
-    <td style="text-align: center"><%=maxtemp%></td>   
+    <td style="text-align: center"><%=maxTemp%></td>   
   </tr>
   <tr>
     <td>Humidity</td>

@@ -12,19 +12,19 @@ namespace WeatherApplication
     public partial class WebForm1 : System.Web.UI.Page
     {
         public string Image;
-        public string mintemp;
-        public string maxtemp;
-        public string temp_string;
+        public string minTemp;
+        public string maxTemp;
+        public string temparatureValue;
         public string weather;
         public string humidity;
         protected void Page_Load(object sender, EventArgs e)
         {
-            string city = Request.QueryString["city"];
+            string txtCity = Request.QueryString["city"];
             System.Net.HttpWebRequest apirequest = WebRequest.Create("http://api.openweathermap.org/data/2.5/weather?q=" +
-               city + "&mode=xml&units=metric&appid=d245edc4e26cff82f6afaae9cce85db8") as HttpWebRequest;
+               txtCity + "&mode=xml&units=metric&appid=d245edc4e26cff82f6afaae9cce85db8") as HttpWebRequest;
             XmlDocument xmlDocument = new XmlDocument();
             string URL = "http://api.openweathermap.org/data/2.5/weather?q=" +
-                city + "&appid=d245edc4e26cff82f6afaae9cce85db8";
+                txtCity + "&appid=d245edc4e26cff82f6afaae9cce85db8";
 
             string response;
             using (HttpWebResponse webResponse = apirequest.GetResponse() as HttpWebResponse)
@@ -33,20 +33,29 @@ namespace WeatherApplication
                 response = streamReader.ReadToEnd();
                 xmlDocument.LoadXml(response);
             }
-            //using (WebClient client = new WebClient())
-            //{
-            //    response = client.DownloadString(URL);
-            //}
-            XmlNode temp_node = xmlDocument.SelectSingleNode("//temperature");
-            XmlAttribute temp_value = temp_node.Attributes["value"];
-            temp_string = temp_value.Value;
+            XmlNode temparatureNode = xmlDocument.SelectSingleNode("//temperature");
+            XmlAttribute temparature = temparatureNode.Attributes["value"];
+            temparatureValue = temparature.Value;
 
-            mintemp = temp_node.Attributes["min"].Value.ToString();
-            maxtemp = temp_node.Attributes["max"].Value.ToString();
+            minTemp = temparatureNode.Attributes["min"].Value.ToString();
+            maxTemp = temparatureNode.Attributes["max"].Value.ToString();
             humidity = xmlDocument.SelectSingleNode("//humidity").Attributes["value"].Value.ToString();
             weather = xmlDocument.SelectSingleNode("//weather").Attributes["value"].Value.ToString();
-            BodyTag.Attributes.Add("class", "snow");
-            Image = "/assets/images/home/snowflake.png";
+            if (weather.Contains("snow"))
+            {
+                BodyTag.Attributes.Add("class", "snow");
+                Image = "/assets/images/home/snowflake.png";
+            }
+            else if (weather.Contains("sun") || (weather.Contains("sky")))
+            {
+                BodyTag.Attributes.Add("class", "sunny");
+                Image = "/assets/images/home/sun.png";
+            }
+            else if (weather.Contains("rain") || (weather.Contains("drizzle")) || weather.Contains("cloud"))
+            {
+                BodyTag.Attributes.Add("class", "rainy");
+                Image = "/assets/images/home/rain.png";
+            }
         }
     }
 }
