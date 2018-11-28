@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
     <meta http-equiv="Content-Style-Type" content="text/css" />
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/web.css" />
     <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-device-width: 480px)" />
@@ -16,6 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+         $(function () {
+             $("#txtCity").autocomplete({
+                 source: "CityAutocompletion.aspx"
+             });
+         });
+    </script>
 </head>
 <body runat="server" id="BodyTag">
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -53,7 +63,7 @@
             </div>
         </div>
     </div>
-    <script src="assets/lib/jquery/dist/jquery.js" type="text/javascript"></script>
+   
     <script src="assets/lib/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/js/site.js" type="text/javascript"></script>
 </body>

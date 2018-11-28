@@ -42,6 +42,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -65,8 +68,10 @@
     <Content Include="Service1.svc" />
     <Content Include="Web.config" />
     <Content Include="Weather.aspx" />
+    <Content Include="CityAutocompletion.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="countryCities.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -86,12 +91,20 @@
     <Compile Include="Weather.aspx.designer.cs">
       <DependentUpon>Weather.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CityAutocompletion.aspx.cs">
+      <DependentUpon>CityAutocompletion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CityAutocompletion.aspx.designer.cs">
+      <DependentUpon>CityAutocompletion.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

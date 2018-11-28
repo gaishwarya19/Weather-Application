@@ -17,3 +17,7 @@ C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.cs
 C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.csproj.CoreCompileInputs.cache
 C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.dll
 C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.pdb
+D:\flex1\github\WeatherApplication\bin\Newtonsoft.Json.dll
+D:\flex1\github\WeatherApplication\bin\Newtonsoft.Json.pdb
+D:\flex1\github\WeatherApplication\bin\Newtonsoft.Json.xml
+D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.csproj.CopyComplete
