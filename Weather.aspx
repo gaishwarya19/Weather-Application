@@ -15,25 +15,21 @@
 <h1> <%=weather%></h1>
 <table id="tabledesign">
     <tr>
-    <td style="font-family: 'Patua One', cursive; font-size: 30px;">London</td> 
-        <td> <img src=<%=Image%>></td>
+    <td style="font-family: 'Patua One', cursive; font-size: 30px"></td> 
+        <td><img src="<%=Image%>"/></td>
   </tr>
-    <br><br>
+    <br />
   <tr>
-    <td>Current Temperature</td>
-    <td style="text-align: center"><%=temparatureValue%></td> 
-  </tr>
-  <tr>
-    <td>Min. Temperature</td>
-    <td style="text-align: center"><%=minTemp%></td>
+    <td>Current Temperature<%=temparatureValue%></td> 
   </tr>
   <tr>
-    <td>Max. Temperature</td>
-    <td style="text-align: center"><%=maxTemp%></td>   
+    <td>Min. Temperature<%=minTemp%></td>
   </tr>
   <tr>
-    <td>Humidity</td>
-    <td style="text-align: center"><%=humidity%></td>
+    <td>Max. Temperature<%=maxTemp%></td>   
+  </tr>
+  <tr>
+    <td>Humidity<%=humidity%></td>
   </tr>
     </table>
   </div>  

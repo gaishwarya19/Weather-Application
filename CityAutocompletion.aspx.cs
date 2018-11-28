@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace WeatherApplication
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class Autocompletecitynames : System.Web.UI.Page
     {
         List<countryCities> CountryCities;
         protected void Page_Load(object sender, EventArgs e)

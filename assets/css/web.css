@@ -74,6 +74,8 @@ h1 {
 }
 
     #tabledesign td, #tabledesign th {
+        text-align: center;
+        vertical-align: central;
         padding-right: 70px;
         padding-bottom: 20px;
     }

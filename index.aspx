@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
     <meta http-equiv="Content-Style-Type" content="text/css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="/resources/demos/style.css"/>
     <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/web.css" />
     <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-device-width: 480px)" />
     <link rel="stylesheet" href="assets/css/print.css" media="print" />
-    <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -53,7 +53,7 @@
 
         <div class="row">
             <h1>Weather Forecast</h1>
-            <img src="/assets/images/home/cloud.png" class="center">
+            <img src="/assets/images/home/cloud.png" class="center"/>
             <div class="formstyle">
                 <form runat="server">
                     <label for="city" style="font-size: 25px; font-family: 'Chelsea Market', cursive; color: white">Enter Your City:</label>

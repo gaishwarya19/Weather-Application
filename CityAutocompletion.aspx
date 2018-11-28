@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CityAutocompletion.aspx.cs" Inherits="WeatherApplication.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CityAutocompletion.aspx.cs" Inherits="Autocompletecitynames" %>
 
 <!DOCTYPE html>
 

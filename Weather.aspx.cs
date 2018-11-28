@@ -17,6 +17,7 @@ namespace WeatherApplication
         public string temparatureValue;
         public string weather;
         public string humidity;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             string txtCity = Request.QueryString["city"];

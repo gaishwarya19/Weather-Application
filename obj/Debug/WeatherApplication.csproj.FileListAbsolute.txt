@@ -21,3 +21,14 @@ D:\flex1\github\WeatherApplication\bin\Newtonsoft.Json.dll
 D:\flex1\github\WeatherApplication\bin\Newtonsoft.Json.pdb
 D:\flex1\github\WeatherApplication\bin\Newtonsoft.Json.xml
 D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.csproj.CopyComplete
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\bin\WeatherApplication.dll.config
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\bin\WeatherApplication.dll
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\bin\WeatherApplication.pdb
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\bin\Newtonsoft.Json.dll
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\bin\Newtonsoft.Json.pdb
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\bin\Newtonsoft.Json.xml
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\obj\Debug\WeatherApplication.csprojAssemblyReference.cache
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\obj\Debug\WeatherApplication.csproj.CoreCompileInputs.cache
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\obj\Debug\WeatherApplication.csproj.CopyComplete
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\obj\Debug\WeatherApplication.dll
+C:\Users\poorna\Source\Repos\CodeReview\WeatherApplication-review\obj\Debug\WeatherApplication.pdb
