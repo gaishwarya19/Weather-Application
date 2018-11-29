@@ -40,7 +40,7 @@
 <h1> <%=weather%></h1>
 <table id="tabledesign">
     <tr>
-    <td style="font-family: 'Patua One', cursive; font-size: 30px;">London</td> 
+    <td style="font-family: 'Patua One', cursive; font-size: 30px;"></td> 
         <td> <img src=<%=Image%>></td>
   </tr>
     <br/><br/>
