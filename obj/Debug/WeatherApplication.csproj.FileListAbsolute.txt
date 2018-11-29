@@ -21,3 +21,14 @@ D:\flex1\github\WeatherApplication\bin\Newtonsoft.Json.dll
 D:\flex1\github\WeatherApplication\bin\Newtonsoft.Json.pdb
 D:\flex1\github\WeatherApplication\bin\Newtonsoft.Json.xml
 D:\flex1\github\WeatherApplication\obj\Debug\WeatherApplication.csproj.CopyComplete
+C:\Users\const\Desktop\code review\bin\WeatherApplication.dll.config
+C:\Users\const\Desktop\code review\bin\WeatherApplication.dll
+C:\Users\const\Desktop\code review\bin\WeatherApplication.pdb
+C:\Users\const\Desktop\code review\bin\Newtonsoft.Json.dll
+C:\Users\const\Desktop\code review\bin\Newtonsoft.Json.pdb
+C:\Users\const\Desktop\code review\bin\Newtonsoft.Json.xml
+C:\Users\const\Desktop\code review\obj\Debug\WeatherApplication.csprojResolveAssemblyReference.cache
+C:\Users\const\Desktop\code review\obj\Debug\WeatherApplication.dll
+C:\Users\const\Desktop\code review\obj\Debug\WeatherApplication.pdb
+C:\Users\const\Desktop\code review\obj\Debug\WeatherApplication.csprojAssemblyReference.cache
+C:\Users\const\Desktop\code review\obj\Debug\WeatherApplication.csproj.CoreCompileInputs.cache

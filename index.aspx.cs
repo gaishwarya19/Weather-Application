@@ -12,6 +12,7 @@ namespace WeatherApplication
 {
     public partial class index : System.Web.UI.Page
     {
+            
         protected void Page_Load(object sender, EventArgs e)
         {
             BodyTag.Attributes.Add("class", "home");
@@ -21,6 +22,11 @@ namespace WeatherApplication
             var city = txtCity.Text.ToString();
             var url = string.Format("{0}?city={1}", @"Weather.aspx", city).ToString();
             Response.Redirect(url);
+        }
+
+        protected void txtCity_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
