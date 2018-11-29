@@ -11,14 +11,39 @@
     <link rel="stylesheet" href="assets/css/print.css" media="print" />
 </head>
 <body runat="server" id="BodyTag">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.aspx" class="navbar-brand">Weather Application</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br />
 <div class="temp">  
+    <% if (message != null){  %>
+    <p><em><%=message%></em></p>
+     <% }%>
+    <% else{%>
 <h1> <%=weather%></h1>
 <table id="tabledesign">
     <tr>
     <td style="font-family: 'Patua One', cursive; font-size: 30px;">London</td> 
         <td> <img src=<%=Image%>></td>
   </tr>
-    <br><br>
+    <br/><br/>
   <tr>
     <td>Current Temperature</td>
     <td style="text-align: center"><%=temparatureValue%></td> 
@@ -36,6 +61,7 @@
     <td style="text-align: center"><%=humidity%></td>
   </tr>
     </table>
+    <% }%>
   </div>  
 </body>
 </html>

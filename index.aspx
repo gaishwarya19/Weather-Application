@@ -53,7 +53,7 @@
 
         <div class="row">
             <h1>Weather Forecast</h1>
-            <img src="/assets/images/home/cloud.png" class="center">
+            <img src="/assets/images/home/cloud.png" class="center" />
             <div class="formstyle">
                 <form runat="server">
                     <label for="city" style="font-size: 25px; font-family: 'Chelsea Market', cursive; color: white">Enter Your City:</label>
