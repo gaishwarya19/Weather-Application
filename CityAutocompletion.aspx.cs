@@ -14,13 +14,20 @@ namespace WeatherApplication
         List<countryCities> CountryCities;
         protected void Page_Load(object sender, EventArgs e)
         {
-            using (var webClient = new WebClient())
+            try
             {
+                using (var webClient = new WebClient())
+                {
 
-                String rawData =
-                    webClient.DownloadString("https://pkgstore.datahub.io/core/world-cities/world-cities_json/data/5b3dd46ad10990bca47b04b4739a02ba/world-cities_json.json");
-                
-               CountryCities = JsonConvert.DeserializeObject<List<countryCities>>(rawData);               
+                    String rawData =
+                        webClient.DownloadString("https://pkgstore.datahub.io/core/world-cities/world-cities_json/data/5b3dd46ad10990bca47b04b4739a02ba/world-cities_json.json");
+
+                    CountryCities = JsonConvert.DeserializeObject<List<countryCities>>(rawData);
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.ToString());
             }
             String term = Request.QueryString["term"];
 
@@ -28,7 +35,7 @@ namespace WeatherApplication
             // change the content type, so the browser knows it's JSON
             Response.ContentType = "application/json; charset=utf-8";
 
-          
+
 
             List<String> matchedCities = new List<String>();
 

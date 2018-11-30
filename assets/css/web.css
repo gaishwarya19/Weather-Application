@@ -80,7 +80,7 @@ h1 {
 
 .snow {
     background-image: url("/assets/images/home/snowyy.jpg");
-    height: 500px;
+    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +89,7 @@ h1 {
 
 .sunny {
     background-image: url("/assets/images/home/sunny.jpg");
-    height: 500px;
+    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,7 +98,7 @@ h1 {
 
 .rainy {
     background-image: url("/assets/images/home/drizzle.jpg");
-    height: 500px;
+    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
