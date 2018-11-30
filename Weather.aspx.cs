@@ -19,6 +19,8 @@ namespace WeatherApplication
         public string humidity;
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
             string txtCity = Request.QueryString["city"];
             System.Net.HttpWebRequest apirequest = WebRequest.Create("http://api.openweathermap.org/data/2.5/weather?q=" +
                txtCity + "&mode=xml&units=metric&appid=d245edc4e26cff82f6afaae9cce85db8") as HttpWebRequest;
@@ -56,6 +58,13 @@ namespace WeatherApplication
                 BodyTag.Attributes.Add("class", "rainy");
                 Image = "/assets/images/home/rain.png";
             }
+            
+            }
+            catch(exception e)
+            {
+                message = "Weather not available for the given city";
+                Console.WriteLine(ex.Message);
+            }    
         }
     }
 }
