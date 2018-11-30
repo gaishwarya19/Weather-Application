@@ -67,6 +67,12 @@ namespace WeatherApplication
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
+                if(ex.Message.Contains("404"))
+                {
+                    Response.Clear();
+                    Response.Write("Hey, We're Sorry. We are unable to get weather details for the city you have provided. Please click here to go back to <a href=\"/Index.aspx\">Home</a>");
+                    Response.End();
+                }
             }
         }
     }

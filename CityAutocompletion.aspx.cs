@@ -24,38 +24,39 @@ namespace WeatherApplication
 
                     CountryCities = JsonConvert.DeserializeObject<List<countryCities>>(rawData);
                 }
+
+                String term = Request.QueryString["term"];
+
+                Response.Clear();
+                // change the content type, so the browser knows it's JSON
+                Response.ContentType = "application/json; charset=utf-8";
+
+
+
+                List<String> matchedCities = new List<String>();
+
+                // iterate over these options, and show only ones that contain the user's text.
+                foreach (countryCities country in CountryCities)
+                {
+
+                    if (country.name.Contains(term))
+                    {
+                        matchedCities.Add(country.name);
+                    }
+                }
+
+                // change the list of citys to a JSON stream.
+                string cityJson = JsonConvert.SerializeObject(matchedCities);
+
+                // write our stuff!
+                Response.Write(cityJson);
+                // we're all done!
+                Response.End();
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
             }
-            String term = Request.QueryString["term"];
-
-            Response.Clear();
-            // change the content type, so the browser knows it's JSON
-            Response.ContentType = "application/json; charset=utf-8";
-
-
-
-            List<String> matchedCities = new List<String>();
-
-            // iterate over these options, and show only ones that contain the user's text.
-            foreach (countryCities country in CountryCities)
-            {
-
-                if (country.name.Contains(term))
-                {
-                    matchedCities.Add(country.name);
-                }
-            }
-
-            // change the list of citys to a JSON stream.
-            string cityJson = JsonConvert.SerializeObject(matchedCities);
-
-            // write our stuff!
-            Response.Write(cityJson);
-            // we're all done!
-            Response.End();
         }
     }
 }
