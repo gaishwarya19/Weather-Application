@@ -7,6 +7,9 @@ using System.Web.UI.WebControls;
 using System.Net;
 using System.IO;
 using System.Xml;
+using System.Net;
+using Newtonsoft.Json;
+
 namespace WeatherApplication
 {
     public partial class WebForm1 : System.Web.UI.Page
@@ -18,18 +21,41 @@ namespace WeatherApplication
         public string weather;
         public string humidity;
         public string txtCity;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             txtCity = Request.QueryString["city"].Replace(" ", String.Empty);
             try
             {
+                //api call for city description
+                //using Google knowlege search API to get the data
+                //https://developers.google.com/apis-explorer/#p/kgsearch/v1/kgsearch.entities.search
+                HttpWebRequest weatherapirequest = WebRequest.Create("https://kgsearch.googleapis.com/v1/entities:search?query=" +
+                txtCity + "&key=AIzaSyAFPNyNsAnAGN2rnS9iWHPjJWUWiPhSgRM&limit=1&types=Place&fields=itemListElement") as HttpWebRequest;
+                string response;
+                XmlDocument weatherxmlDocument = new XmlDocument();
+                using (HttpWebResponse webResponse = weatherapirequest.GetResponse() as HttpWebResponse)
+                {
+                    StreamReader streamReader = new StreamReader(webResponse.GetResponseStream());
+                    response = streamReader.ReadToEnd();
+                    //xmlDocument.LoadXml(response);
+                    weatherxmlDocument = JsonConvert.DeserializeXmlNode(response);
+                    XmlNode xmlNode = weatherxmlDocument.SelectSingleNode("//result/detailedDescription/articleBody");
+                    string desc;
+                    // desc = xmlNode.Attributes["articleBody"].ToString();
+                    desc = xmlNode.InnerXml.ToString();
+                }
+
+                //api call for weather data
+                //using Open Weather API to get the data
+                //https://openweathermap.org/current
                 System.Net.HttpWebRequest apirequest = WebRequest.Create("http://api.openweathermap.org/data/2.5/weather?q=" +
                    txtCity + "&mode=xml&units=metric&appid=d245edc4e26cff82f6afaae9cce85db8") as HttpWebRequest;
                 XmlDocument xmlDocument = new XmlDocument();
                 string URL = "http://api.openweathermap.org/data/2.5/weather?q=" +
                     txtCity + "&appid=d245edc4e26cff82f6afaae9cce85db8";
 
-                string response;
+                //string response;
                 using (HttpWebResponse webResponse = apirequest.GetResponse() as HttpWebResponse)
                 {
                     StreamReader streamReader = new StreamReader(webResponse.GetResponseStream());
