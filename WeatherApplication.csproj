@@ -71,6 +71,8 @@
     <Content Include="CityAutocompletion.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="mesg.cs" />
+    <Compile Include="city.cs" />
     <Compile Include="countryCities.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
