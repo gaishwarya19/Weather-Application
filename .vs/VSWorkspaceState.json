@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\css",
-    "\\assets\\images\\home"
+    "\\assets\\css"
   ],
-  "SelectedNode": "\\index.aspx",
+  "SelectedNode": "\\Article.cs",
   "PreviewInSolutionExplorer": false
 }
