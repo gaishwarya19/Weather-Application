@@ -80,6 +80,9 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Model\Article.cs" />
+    <Compile Include="Model\Newsfeed.cs" />
+    <Compile Include="Model\Source.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
