@@ -25,8 +25,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/Index.aspx">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="/Index.aspx">Present</a></li>
+                    <li><a href="/Weather2.aspx">Future Prediction</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
     <!-- Weather Details Node -->
     <div class="temp">
         <h1><%=weather%></h1>
-        <table id="tabledesign">
+        <table class="tabledesign">
             <tr>
                 <td style="font-family: 'Patua One', cursive; font-size: 30px;"><%=txtCity%></td>
                 <td>
@@ -60,6 +60,10 @@
                 <td style="text-align: center"><%=humidity%></td>
             </tr>
         </table>
+        
+        <% if (desc != null) { %>
+        <table class="tabledesign"><tr><td><%=desc %></td></tr></table>
+        <% } %>
     </div>
     <!-- End of Weather Details Node -->
 </body>

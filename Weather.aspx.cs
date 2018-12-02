@@ -21,6 +21,7 @@ namespace WeatherApplication
         public string weather;
         public string humidity;
         public string txtCity;
+        public string desc;
         
 
         protected void Page_Load(object sender, EventArgs e)
@@ -47,7 +48,7 @@ namespace WeatherApplication
                     //xmlDocument.LoadXml(response);
                     weatherxmlDocument = JsonConvert.DeserializeXmlNode(response);
                     XmlNode xmlNode = weatherxmlDocument.SelectSingleNode("//result/detailedDescription/articleBody");
-                    string desc;
+
                     // desc = xmlNode.Attributes["articleBody"].ToString();
                     desc = xmlNode.InnerXml.ToString();
                 }

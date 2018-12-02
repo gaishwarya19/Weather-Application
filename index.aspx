@@ -41,8 +41,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/Index.aspx">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="/Index.aspx">Present</a></li>
+                    <li><a href="/Weather2.aspx">Future Prediction</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
