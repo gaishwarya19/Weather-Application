@@ -124,8 +124,8 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <h1>Weather</h1>
-                            <% if (city != null)
-                                             { %><h2><%=city %></h2>
+                            <% if (cityValue != null)
+                                             { %><h2><%=cityValue %></h2>
                             <% } %>
                         </div>
                         <div class="col-sm-6" >

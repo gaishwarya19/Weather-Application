@@ -20,17 +20,23 @@ namespace WeatherApplication
         public List day4;
         public string Image4;
         public int count = 0;
-        public string city;
         public Boolean load;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!load)
             {
                 count = 0;
-                var url = "http://api.openweathermap.org/data/2.5/forecast?q=Cincinnati,us&appid=d245edc4e26cff82f6afaae9cce85db8";
+                if(Request.QueryString["city"] != null) { 
+                    cityValue = Request.QueryString["city"].Replace(" ", "+");
+                }
+                if (cityValue == null)
+                {
+                    cityValue = "Cincinnati";
+                }
+                var url = "http://api.openweathermap.org/data/2.5/forecast?q="+ cityValue + "&appid=d245edc4e26cff82f6afaae9cce85db8";
                 var weather = new WebClient().DownloadString(url);
                 cityWeather = JsonConvert.DeserializeObject<MainMessage>(weather);
-                city = cityWeather.city.name;
+                cityValue = cityWeather.city.name;
                 foreach (var l in cityWeather.list)
                 {
                     if (l.dt_txt.Contains("12:00:00"))
@@ -117,7 +123,7 @@ namespace WeatherApplication
                     Image4 = "/assets/images/home/sun.png";
                 }
 
-                var url2 = "https://newsapi.org/v2/everything?q=" + "Cincinnati" + "&from=2018-12-01&sources=bbc-news&sortBy=popularity&apiKey=e1b6533a443c46e5835101936851de83";
+                var url2 = "https://newsapi.org/v2/everything?q=" + cityValue + "&from=2018-12-01&sources=bbc-news&sortBy=popularity&apiKey=e1b6533a443c46e5835101936851de83";
                 var newsjson = new WebClient().DownloadString(url);
                 cityNews = JsonConvert.DeserializeObject<Newsfeed>(newsjson);
             }
@@ -126,10 +132,11 @@ namespace WeatherApplication
         {
             count = 0;
             cityValue = txtCity.Text.ToString();
+            cityValue = Request.QueryString["city"].Replace(" ", "+");
             var url = "http://api.openweathermap.org/data/2.5/forecast?q="+ cityValue +"&appid=d245edc4e26cff82f6afaae9cce85db8";
             var weather = new WebClient().DownloadString(url);
             var cityWeather = JsonConvert.DeserializeObject<MainMessage>(weather);
-            city = cityWeather.city.name;
+            cityValue = cityWeather.city.name;
             foreach ( var l in cityWeather.list )
             {
                 if (l.dt_txt.Contains("12:00:00")){
