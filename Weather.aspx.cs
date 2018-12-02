@@ -22,9 +22,15 @@ namespace WeatherApplication
         public string humidity;
         public string txtCity;
         
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtCity = Request.QueryString["city"].Replace(" ", String.Empty);
+            if (string.IsNullOrEmpty(Request.QueryString["city"].ToString()))
+            {
+                throw new Exception("Please enter some value");
+            }
+            //txtCity = Request.QueryString["city"].Replace(" ", String.Empty);
+            txtCity = Request.QueryString["city"].Replace(" ", "+");
             try
             {
                 //api call for city description
