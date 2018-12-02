@@ -66,13 +66,12 @@
   <ItemGroup>
     <Content Include="index.aspx" />
     <Content Include="Service1.svc" />
+    <Content Include="Weather2.aspx" />
     <Content Include="Web.config" />
     <Content Include="Weather.aspx" />
     <Content Include="CityAutocompletion.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="mesg.cs" />
-    <Compile Include="city.cs" />
     <Compile Include="countryCities.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -100,6 +99,23 @@
     <Compile Include="CityAutocompletion.aspx.designer.cs">
       <DependentUpon>CityAutocompletion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Weather2.aspx.cs">
+      <DependentUpon>Weather2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Weather2.aspx.designer.cs">
+      <DependentUpon>Weather2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\City.cs" />
+    <Compile Include="Model\Clouds.cs" />
+    <Compile Include="Model\Coord.cs" />
+    <Compile Include="Model\List.cs" />
+    <Compile Include="Model\Main.cs" />
+    <Compile Include="Model\MainMessage.cs" />
+    <Compile Include="Model\Snow.cs" />
+    <Compile Include="Model\Sys.cs" />
+    <Compile Include="Model\Weather.cs" />
+    <Compile Include="Model\Wind.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
