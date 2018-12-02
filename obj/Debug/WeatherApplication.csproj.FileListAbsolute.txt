@@ -27,3 +27,12 @@ D:\UCGit\WeatherApplication\obj\Debug\WeatherApplication.dll
 D:\UCGit\WeatherApplication\obj\Debug\WeatherApplication.pdb
 C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.csprojAssemblyReference.cache
 C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.csproj.CoreCompileInputs.cache
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\bin\WeatherApplication.dll.config
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\bin\WeatherApplication.dll
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\bin\WeatherApplication.pdb
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\bin\Newtonsoft.Json.dll
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\bin\Newtonsoft.Json.pdb
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\bin\Newtonsoft.Json.xml
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.csproj.CopyComplete
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.dll
+C:\Users\deepa\Desktop\Pavans\WeatherApplication\obj\Debug\WeatherApplication.pdb

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace OpenWeatherService_Class
+namespace WeatherApplication
 {
     public class Article
     {

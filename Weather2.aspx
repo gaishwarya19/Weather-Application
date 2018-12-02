@@ -103,12 +103,12 @@
                 
                 <div class="top-container">
                 <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-6">
             <h1>Weather</h1>
-            <h2>City</h2>
+            <h2><%=city %></h2>
         
         </div>
-        <div class="col-sm-5" >
+        <div class="col-sm-6" >
             <form runat="server">
                 <asp:TextBox ID="txtCity" runat="server" style="font-size: 20px;"></asp:TextBox>
                 <asp:Button ID="btnSearch" runat="server" Text="Go" OnClick="btnSearch_click" />                 
@@ -126,41 +126,41 @@
                 <div class="bottom-container">
                 <div class="row">
                     <div class="col-sm" >
-                        <p>SAT</p>
-                        <p>Rain</p>
-                        <p>Image</p>
-                        <p>temp</p>
-                        <p>humidity</p>
+                        <p><%=(string.IsNullOrEmpty(day1.dt_txt) ? "": day1.dt_txt)%></p>
+                        <p><%=(day1.weather[0].description ?? "") %></p>
+                        <p><img src="<%=Image1 %>"</p>
+                        <p><%=day1.main.temp - 273 %></p>
+                        <p><%=day1.main.humidity %></p>
                     </div>
                     <div class="verticalLine1"></div>
-                    <div class="col-sm"  >
-                        <p>SAT</p>
-                        <p>Rain</p>
-                        <p>Image</p>
-                        <p>temp</p>
-                        <p>humidity</p>
+                    <div class="col-sm" >
+                        <p><%=(string.IsNullOrEmpty(day2.dt_txt) ? "": day2.dt_txt)%></p>
+                        <p><%=(day2.weather[0].description ?? "") %></p>
+                        <p><img src="<%=Image2 %>"</p>
+                        <p><%=day2.main.temp - 273 %></p>
+                        <p><%=day2.main.humidity %></p>
                     </div>
                      <div class="verticalLine2"></div>
                     <div class="col-sm" >
-                        <p>SAT</p>
-                        <p>Rain</p>
-                        <p>Image</p>
-                        <p>temp</p>
-                        <p>humidity</p>
+                        <p><%=(string.IsNullOrEmpty(day3.dt_txt) ? "": day3.dt_txt)%></p>
+                        <p><%=(day3.weather[0].description ?? "") %></p>
+                        <p><img src="<%=Image3 %>"</p>
+                        <p><%=day3.main.temp - 273 %></p>
+                        <p><%=day3.main.humidity %></p>
                     </div>
                      <div class="verticalLine3"></div>
-                    <div class="col-sm">
-                        <p>SAT</p>
-                        <p>Rain</p>
-                        <p>Image</p>
-                        <p>temp</p>
-                        <p>humidity</p>
+                    <div class="col-sm" >
+                        <p><%=(string.IsNullOrEmpty(day4.dt_txt) ? "": day4.dt_txt)%></p>
+                        <p><%=(day4.weather[0].description ?? "") %></p>
+                        <p><img src="<%=Image4 %>"</p>
+                        <p><%=day4.main.temp - 273 %></p>
+                        <p><%=day4.main.humidity %></p>
                     </div>
                 </div>
                     </div>
                 <div class="col col-lg-5">
 
-            </div>
+                </div>
                 </div>
         </div>
     </div>
