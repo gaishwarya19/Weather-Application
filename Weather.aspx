@@ -25,7 +25,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/Index.aspx">Present</a></li>
+                  <!--  <li><a href="/Index.aspx">Present</a></li> shreya-->
                     <% var f = "/Weather2.aspx?city=" + txtCity; %>
                     <li><a href="<%=f %>">Future Prediction</a></li>
                     <li><a href="#">Contact</a></li>

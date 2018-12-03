@@ -124,7 +124,7 @@ namespace WeatherApplication
                 }
 
                 var url2 = "https://newsapi.org/v2/everything?q=" + cityValue + "&from=2018-12-01&sources=bbc-news&sortBy=popularity&apiKey=e1b6533a443c46e5835101936851de83";
-                var newsjson = new WebClient().DownloadString(url);
+                var newsjson = new WebClient().DownloadString(url2);
                 cityNews = JsonConvert.DeserializeObject<Newsfeed>(newsjson);
             }
         }
@@ -159,7 +159,7 @@ namespace WeatherApplication
                 }
             }
             var url2 = "https://newsapi.org/v2/everything?q=" + cityValue + "&from=2018-12-01&sources=bbc-news&sortBy=popularity&apiKey=e1b6533a443c46e5835101936851de83";
-            var newsjson = new WebClient().DownloadString(url);
+            var newsjson = new WebClient().DownloadString(url2);
             var obj2 = JsonConvert.DeserializeObject<Newsfeed>(newsjson);
             if (day1.weather[0].description.Contains("snow"))
             {
