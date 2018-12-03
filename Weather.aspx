@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/Index.aspx" class="navbar-brand">Weather Application</a>
+                <a class="navbar-brand">Weather Application</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -38,7 +38,7 @@
         <h1><%=weather%></h1>
         <table class="tabledesign">
             <tr>
-                <td style="font-family: 'Patua One', cursive; font-size: 30px;"><%=txtCity%></td>
+                <td style="font-family: 'Patua One', cursive; font-size: 40px;text-transform:uppercase;"><%=txtCity%></td>
                 <td>
                     <img src="<%=Image%>"></td>
             </tr>
@@ -61,9 +61,9 @@
                 <td style="text-align: center"><%=humidity%></td>
             </tr>
         </table>
-        
+        <br/>
         <% if (desc != null) { %>
-        <table class="tabledesign"><tr><td><%=desc %></td></tr></table>
+        <table style="font-family: 'Patua One', cursive; font-size: 20px; text-align:center;color:white;font-weight:bold;"><tr><td><%=desc %></td></tr></table>
         <% } %>
     </div>
     <!-- End of Weather Details Node -->

@@ -37,7 +37,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/Index.aspx" class="navbar-brand">Weather Application</a>
+                <a href="/index.aspx" class="navbar-brand">Weather Application</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
