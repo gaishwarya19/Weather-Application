@@ -222,6 +222,20 @@
             </div>
              <div class="col col-lg-5">
                  <h3> City News</h3>
+                    <table class="table">
+
+                     <tr>
+                         <th>1</th>
+                         <td><a href="<%=cityNews.articles[0].url %>"><%=cityNews.articles[0].description%></a>
+                         <td>
+                     </tr>
+                     <tr>
+                         <th>2</th>
+                         <td><a href="<%=cityNews.articles[1].url %>"><%=cityNews.articles[1].description%></a>
+                         <td>
+                     </tr>                                   
+                        
+                 </table>
              </div>
         </div>
    </div>
